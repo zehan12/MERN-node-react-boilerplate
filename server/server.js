@@ -12,7 +12,7 @@ const PORT = 8000;
 const app = express();
 
 app.get("/api",(req,res)=>{
-  res.send("hello from backend")  
+  res.json({"api":"hello from backend"})  
 })
 
 app.use("/", (req, res, next) => {
